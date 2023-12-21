@@ -2,14 +2,17 @@ import '/components/criar_projeto_widget.dart';
 import '/components/video_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'home_page_model.dart';
 export 'home_page_model.dart';
 
 class HomePageWidget extends StatefulWidget {
-  const HomePageWidget({super.key});
+  const HomePageWidget({Key? key}) : super(key: key);
 
   @override
   _HomePageWidgetState createState() => _HomePageWidgetState();
@@ -64,7 +67,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   fontSize: 22.0,
                 ),
           ),
-          actions: const [],
+          actions: [],
           centerTitle: false,
           elevation: 2.0,
         ),
@@ -97,9 +100,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           children: [
                             Flexible(
                               child: Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       9.0, 9.0, 9.0, 9.0),
                                   child: Container(
                                     width: 155.0,
@@ -110,11 +113,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           FlutterFlowTheme.of(context).primary,
                                           FlutterFlowTheme.of(context).secondary
                                         ],
-                                        stops: const [0.0, 1.0],
-                                        begin: const AlignmentDirectional(0.0, -1.0),
-                                        end: const AlignmentDirectional(0, 1.0),
+                                        stops: [0.0, 1.0],
+                                        begin: AlignmentDirectional(0.0, -1.0),
+                                        end: AlignmentDirectional(0, 1.0),
                                       ),
-                                      borderRadius: const BorderRadius.only(
+                                      borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(6.0),
                                         bottomRight: Radius.circular(6.0),
                                         topLeft: Radius.circular(6.0),
@@ -146,7 +149,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                 padding:
                                                     MediaQuery.viewInsetsOf(
                                                         context),
-                                                child: const CriarProjetoWidget(),
+                                                child: CriarProjetoWidget(),
                                               ),
                                             );
                                           },
@@ -183,9 +186,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               ),
                             ),
                             Align(
-                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, 0.0),
                               child: Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     9.0, 9.0, 9.0, 9.0),
                                 child: Container(
                                   width: 155.0,
@@ -196,11 +199,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         FlutterFlowTheme.of(context).primary,
                                         FlutterFlowTheme.of(context).secondary
                                       ],
-                                      stops: const [0.0, 1.0],
-                                      begin: const AlignmentDirectional(0.0, -1.0),
-                                      end: const AlignmentDirectional(0, 1.0),
+                                      stops: [0.0, 1.0],
+                                      begin: AlignmentDirectional(0.0, -1.0),
+                                      end: AlignmentDirectional(0, 1.0),
                                     ),
-                                    borderRadius: const BorderRadius.only(
+                                    borderRadius: BorderRadius.only(
                                       bottomLeft: Radius.circular(6.0),
                                       bottomRight: Radius.circular(6.0),
                                       topLeft: Radius.circular(6.0),
@@ -231,7 +234,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             child: Padding(
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
-                                              child: const VideoWidget(),
+                                              child: VideoWidget(),
                                             ),
                                           );
                                         },
