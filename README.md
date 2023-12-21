@@ -1,0 +1,2 @@
+# appsoc
+aplicativo appsoc
